@@ -1,0 +1,63 @@
+@import "../../global";
+
+.skillsSection {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  @include mobile{
+    height: 800px !important;
+  }
+  h1{
+    padding-bottom: 1em;
+    display: flex;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    @include mobile {
+      flex-direction: row;
+      height: 100%;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      padding: 1em;
+      width: 100%;
+      flex:1;
+      @include mobile {
+        flex-direction: column;
+      }
+
+      li {
+        flex: 1;
+
+        figure {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 0.5em;
+
+          img {
+            height: 9em;
+            width: auto;
+
+            @include mobile {
+              height: 7em;
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}
